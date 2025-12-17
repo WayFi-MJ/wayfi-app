@@ -11,6 +11,7 @@ import {
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { Separator } from '@/components/ui/separator'
+import { ThemeToggle } from '@/components/theme-toggle'
 
 const navigation = [
   {
@@ -70,7 +71,8 @@ export default function Sidebar() {
       
       <Separator />
       
-      <div className="p-4">
+      <div className="p-4 space-y-2">
+        <ThemeToggle />
         <div className="text-xs text-muted-foreground">
           Wayfi Admin Dashboard
         </div>
